@@ -3,7 +3,7 @@ using UnityEngine;
 public class AirObstacleSpawner : MonoBehaviour
 {
     public GameObject airObstaclePrefab;
-    private Vector3 spawnPos = new Vector3(30, 10, 0);
+    private Vector3 spawnPos = new Vector3(40, 7, 0);
     private float startDelay = 3;
     private float repeatRate = 3;
 

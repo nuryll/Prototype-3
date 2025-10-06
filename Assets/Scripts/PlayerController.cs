@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
         playerRb = GetComponent<Rigidbody>();
         playerAnim = GetComponent<Animator>();
-        Physics.gravity *= gravityModifier; // Modify the gravity in the game
+        Physics.gravity = new Vector3(0, -9.81f, 0) * gravityModifier; 
         playerAudio = GetComponent<AudioSource>();// Get the AudioSource component attached to the player
 
         if (gameOverText != null)
